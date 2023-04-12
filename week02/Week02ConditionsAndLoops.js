@@ -45,6 +45,18 @@ Question 1: Driving the speed limit.. ? \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
+let speedLimitMilePerHour = 80; // mile per-hour
+let mySpeed = 80; 
+
+if(mySpeed > speedLimitMilePerHour) {
+   console.log("Slow down we're going to crash! and Mom's Mad!");
+}
+else if (mySpeed < speedLimitMilePerHour) { 
+   console.log("Come on speed up! Dad's getting Mad!");
+}
+else { 
+   console.log("Everyone is happy now!");
+}
 
 
 /*-------------------------------------------------------*/
@@ -63,7 +75,23 @@ Question 2: Is it time to wake up for work? \n`);
  *         b. Otherwise, print "I can sleep in!" to the console.
  * 
  * ↓ YOUR CODE HERE ↓ */
+let alarmSet = '0600';
+let today = 'Saturday';
+let workDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']; 
+let weekEnd = ['Saturday', 'Sunday']; 
 
+if (alarmSet === '0600' && workDays.includes(today)) { 
+   console.log('Alarm! Beep Beep! Get Up!');
+}
+else if (alarmSet === '0600' && weekEnd.includes(today)) { 
+   console.log('You can sleep in!');
+}
+else if (alarmSet !== '0600' && workDays.includes(today)) {
+   console.log('The Alarm is set for 0600');
+}
+else { 
+   console.log('Go Ahead and Sleep');
+}
 
 
 /*-------------------------------------------------------*/
@@ -82,7 +110,15 @@ Question 3: Username & Password \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
+let userName = 'Timmy456'; 
+let password = '12345'; 
 
+if (userName === 'Tommy123' && password === '12345' || userName === 'Timmy456' && password === '6789') { 
+   console.log('Administrator Access is Granted');
+}
+else { 
+   console.log('Administrator Access is Denied');
+}
 
 /*-------------------------------------------------------*/
 
@@ -102,7 +138,18 @@ Question 4: Student Class \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
+let studentClass; 
+let studentGrade = 10; 
 
+if (studentGrade <= 6) { 
+   studentClass = 'Elementary'; 
+}
+else if (studentGrade <=8) { 
+   studentClass = 'Middle'; 
+}
+else if (studentGrade === 9) { 
+   studentClass = 'Freshman'; 
+} 
 
 /*-------------------------------------------------------*/
 
@@ -131,7 +178,6 @@ Question 5: Debugging an infinite loop! \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
-
-
-
 console.log('-----------Finished------------')
+
+
